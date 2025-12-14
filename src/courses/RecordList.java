@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecordList<T> implements Serializable {
+public class RecordList<T extends Identifiable> implements Serializable {
     // Stores objects for students, courses, transcripts
     private List<T> records;
 

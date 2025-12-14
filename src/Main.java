@@ -29,7 +29,7 @@ public class Main {
         // Test DataStore
         DataStore<Course> dataStore = new DataStore<>();
         dataStore.saveToFile("data/courses.dat", courseList.getAll());
-        System.out.println("\Courses saved to data/courses.dat");
+        System.out.println("Courses saved to data/courses.dat");
 
         List<Course> loadedCourses = dataStore.loadFromFile("data/courses.dat");
         System.out.println("Loaded " + loadedCourses.size() + " courses from file\n");
